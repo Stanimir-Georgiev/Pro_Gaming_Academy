@@ -44,3 +44,24 @@ exclude:
   - gulpfile.js
   - package.json
   - package-lock.json
+
+navigation:
+  - url: /academy
+    text: About
+    items:
+      - url: /academy
+        text: Academy
+      - url: /trainers
+        text: Trainers
+      - url: /questions
+        text: Questions
+  - url: /blog
+    text: Blog
+  - url: /trainings
+    text: Trainings
+  - url: /proteams
+    text: Pro Teams
+  - url: /achievements
+    text: Achievements and Trophies
+  - url: /contacts
+    text: Contacts
