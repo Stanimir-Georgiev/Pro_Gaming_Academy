@@ -1,0 +1,27 @@
+.site-header {
+    background: white;
+
+}
+.site-header .header-wrapper {
+    padding: 0 2em;
+    display: flex;
+    align-items: center
+}
+.header-wrapper a {
+    padding: 0;
+    margin: 0;
+    display: block;
+    
+}
+.header-wrapper img {
+    width: 200px;
+    height: 100px;
+    display: block;
+    opacity: 0;
+    transform: translateY(10em) rotate(90deg);
+    transition: opacity 0.5s ease-in-out 0.8s, transform 0.5s ease-out 0.8s
+}
+body.loaded .header-wrapper img {
+    opacity: 1;
+    transform: translateY(0) rotate(0)
+}

@@ -48,6 +48,7 @@ exclude:
 navigation:
   - url: /academy
     text: About
+    icon: fa-caret-down
     items:
       - url: /academy
         text: Academy
@@ -60,8 +61,12 @@ navigation:
   - url: /trainings
     text: Trainings
   - url: /proteams
-    text: Pro Teams
+    text: Teams
   - url: /achievements
-    text: Achievements and Trophies
+    text: Trophies
   - url: /contacts
     text: Contacts
+  - url: /login
+    text: Login
+  - url: /register
+    text: Register
