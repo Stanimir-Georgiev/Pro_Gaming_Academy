@@ -1,6 +1,6 @@
 .site-header {
-    background: white;
-
+    background: #070707;
+    border-bottom: 5px solid #369
 }
 .site-header .header-wrapper {
     padding: 0 2em;

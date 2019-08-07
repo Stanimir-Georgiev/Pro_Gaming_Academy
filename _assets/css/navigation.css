@@ -51,7 +51,7 @@ body.loaded .site-nav.location-header li {
     opacity: 0;
     pointer-events: none;
     position: absolute;
-    top: 100%;
+    top: 106%;
     left: 50%;
     transform: translateX(-50%);
     border: 2px solid #369;
@@ -87,7 +87,7 @@ body.loaded .site-nav.location-header li {
 }
 .site-nav.location-header ul li:nth-child(7) a,.site-nav.location-header ul li:nth-child(8) a {
     font-weight: bolder;
-    color: #222222
+    color:  #e68a00    
 }
 
 @keyframes border {
