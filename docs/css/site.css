@@ -262,11 +262,13 @@ body.loaded .site-nav.location-header li {
       -webkit-animation-delay: 1.5s;
               animation-delay: 1.5s; }
     .site-banner .addvert h2 {
-      color: #e68a00; }
+      color: #e68a00;
+      text-shadow: 1px 1px white; }
       .site-banner .addvert h2:last-child {
         padding-bottom: 2em; }
     .site-banner .addvert h3 {
-      color: white; }
+      color: white;
+      text-shadow: 1px 1px #e68a00; }
       .site-banner .addvert h3:first-child {
         padding-top: 3em; }
   .site-banner .button-wrapper {
@@ -328,6 +330,73 @@ body.loaded .site-nav.location-header li {
     opacity: 0.5; }
   100% {
     opacity: 1; } }
+
+.team {
+  padding: 0 4em;
+  background: #070707; }
+  .team h2 {
+    text-align: center;
+    margin-bottom: 2em;
+    color: #e68a00; }
+    .team h2::after {
+      display: block;
+      content: '';
+      border-bottom: 5px solid #6598d1;
+      max-width: 15%;
+      margin: 1em auto; }
+  .team ul {
+    display: flex;
+    flex-wrap: wrap; }
+    .team ul li {
+      list-style: none outside;
+      text-align: center;
+      flex-basis: 30%;
+      margin-right: 2em;
+      margin-bottom: 2em; }
+      .team ul li:hover ul {
+        background: #6598d1 i;
+          background-color: #e68a00; }
+      .team ul li .team-wrapper {
+        box-shadow: 10px 10px 45px 0px rgba(255, 255, 255, 0.75);
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        border-radius: 1em;
+        margin-top: 5em; }
+        .team ul li .team-wrapper::before {
+          display: block;
+          content: '';
+          padding-top: 50%; }
+      .team ul li .image-wrapper img {
+        width: 150px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 5em;
+        position: absolute;
+        bottom: 70%;
+        left: 50%;
+        transform: translateX(-50%); }
+      .team ul li h5 {
+        width: 100%;
+        color: #e68a00; }
+      .team ul li h6 {
+        width: 100%;
+        color: #6598d1; }
+      .team ul li p {
+        width: 70%;
+        margin: 0 auto;
+        color: white; }
+      .team ul li ul {
+        background: white;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em; }
+        .team ul li ul li {
+          margin: 0 0 0 0.8em;
+          padding: 0;
+          flex-basis: 0; }
+          .team ul li ul li i {
+            font-size: 1.5em;
+            color: #6598d1; }
 
 .site-footer {
   background: #070707;

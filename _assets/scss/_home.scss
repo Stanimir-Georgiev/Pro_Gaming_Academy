@@ -16,15 +16,18 @@
       animation-duration: 2s;
       animation-fill-mode: forwards;
       animation-delay: 1.5s;
+      
      }
      h2 {
       color: #e68a00;
+      text-shadow: 1px 1px white;
       &:last-child {
         padding-bottom: 2em;
       }
      }
      h3 {
        color: white;
+      text-shadow: 1px 1px #e68a00;
        &:first-child {
          padding-top: 3em;
        };
