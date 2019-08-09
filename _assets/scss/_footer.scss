@@ -5,8 +5,8 @@
         color: #e68a00;
         margin-bottom: 1.5em;
         opacity: 0;
-        transform: translateX(4em);
-        transition: opacity 0.3s ease-in-out, transform 0.3s ease-out; 
+        transform: translateX(1em);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-out; 
         transition-delay: 1.7s;        
     }
     h6 {
@@ -69,7 +69,7 @@
     .addition {
         margin-top: 1em;
         opacity: 0;
-        transform: translateX(-5em);
+        transform: translateX(-1em);
         transition: 0.4s transform ease-in, opacity 0.4s ease-out;
         transition-delay: 1.5s;
         a {

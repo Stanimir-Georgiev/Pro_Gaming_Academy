@@ -148,11 +148,11 @@ body.loaded .header-wrapper img {
       transition-delay: 0.5s; }
     .site-nav.location-header li:nth-child(7) {
       transition-delay: 0.6s;
-      transform: translateX(10em);
+      transform: translateX(4em);
       margin-left: 3em; }
     .site-nav.location-header li:nth-child(8) {
       transition-delay: 0.7s;
-      transform: translateX(10em); }
+      transform: translateX(2em); }
 
 body.loaded .site-nav.location-header li {
   opacity: 1;
@@ -239,6 +239,96 @@ body.loaded .site-nav.location-header li {
     opacity: 1;
     transform: translate(-50%, 0); } }
 
+.site-banner {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/kv.jpg") no-repeat center center; }
+  .site-banner .addvert {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .site-banner .addvert h2, .site-banner .addvert h3 {
+      text-align: center;
+      padding-top: 0.5em;
+      width: 100%;
+      opacity: 0;
+      -webkit-animation-name: banner;
+              animation-name: banner;
+      -webkit-animation-duration: 2s;
+              animation-duration: 2s;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards;
+      -webkit-animation-delay: 1.5s;
+              animation-delay: 1.5s; }
+    .site-banner .addvert h2 {
+      color: #e68a00; }
+      .site-banner .addvert h2:last-child {
+        padding-bottom: 2em; }
+    .site-banner .addvert h3 {
+      color: white; }
+      .site-banner .addvert h3:first-child {
+        padding-top: 3em; }
+  .site-banner .button-wrapper {
+    padding-top: 4em;
+    padding-bottom: 6em;
+    width: 100%;
+    text-align: center; }
+    .site-banner .button-wrapper .button {
+      font-size: 1.5em;
+      padding: 0.5em 1em;
+      border: 3px solid white;
+      color: #e68a00;
+      border-radius: 0.4em;
+      background: rgba(7, 7, 7, 0.5);
+      -webkit-animation: button 3s ease-in-out 2.5s forwards;
+              animation: button 3s ease-in-out 2.5s forwards;
+      opacity: 0; }
+      .site-banner .button-wrapper .button:hover {
+        border-color: #e68a00;
+        color: white; }
+
+.loaded .button {
+  opacity: 1; }
+
+@-webkit-keyframes banner {
+  0% {
+    opacity: 0.5;
+    transform: translateX(10em); }
+  50% {
+    opacity: 1;
+    transform: translateX(-5em); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes banner {
+  0% {
+    opacity: 0.5;
+    transform: translateX(10em); }
+  50% {
+    opacity: 1;
+    transform: translateX(-5em); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@-webkit-keyframes button {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
+@keyframes button {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+
 .site-footer {
   background: #070707;
   border-top: 5px solid #6598d1; }
@@ -246,8 +336,8 @@ body.loaded .site-nav.location-header li {
     color: #e68a00;
     margin-bottom: 1.5em;
     opacity: 0;
-    transform: translateX(4em);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-out;
+    transform: translateX(1em);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;
     transition-delay: 1.7s; }
   .site-footer h6 {
     color: #e68a00; }
@@ -318,7 +408,7 @@ body.loaded .site-nav.location-header li {
 .logo .addition {
   margin-top: 1em;
   opacity: 0;
-  transform: translateX(-5em);
+  transform: translateX(-1em);
   transition: 0.4s transform ease-in, opacity 0.4s ease-out;
   transition-delay: 1.5s; }
   .logo .addition a {
