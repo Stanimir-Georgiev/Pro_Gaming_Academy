@@ -22,6 +22,10 @@
             flex-basis: 30%;
             margin-right: 2em;
             margin-bottom: 2em;
+            opacity: 0;
+            transform: translateY(-2em);
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;            
+            transition-delay: 1.5s;
             &:hover ul {
                 background: #6598d1
                 i {
@@ -56,11 +60,13 @@
             }
             h5 {
                 width: 100%;
-                color: #e68a00
+                color: #e68a00;
+                margin-bottom: 1em;
             }
             h6 {
                 width: 100%;
-                color: #6598d1
+                color: #6598d1;
+                margin-bottom: 1em;
             }
             p {
                 width: 70%;
@@ -83,4 +89,8 @@
             }
         }
     }
+}
+.loaded .team li {
+    opacity: 1;
+    transform: translateY(0)
 }

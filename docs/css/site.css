@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Lacquer&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap");
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -6,7 +7,7 @@
 
 html {
   box-sizing: border-box;
-  font: var(--font-size-body, 16px)/1.5 "Fira Sans", Georgia, serif; }
+  font: var(--font-size-body, 16px)/1.5 "PT Sans", sans-serif; }
 
 body, table, form, select, option, input, textarea {
   font: inherit; }
@@ -242,7 +243,7 @@ body.loaded .site-nav.location-header li {
 .site-banner {
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/kv.jpg") no-repeat center center; }
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("{{ site.url }}/images/kv.jpg") no-repeat center center; }
   .site-banner .addvert {
     width: 60%;
     display: flex;
@@ -352,7 +353,11 @@ body.loaded .site-nav.location-header li {
       text-align: center;
       flex-basis: 30%;
       margin-right: 2em;
-      margin-bottom: 2em; }
+      margin-bottom: 2em;
+      opacity: 0;
+      transform: translateY(-2em);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;
+      transition-delay: 1.5s; }
       .team ul li:hover ul {
         background: #6598d1 i;
           background-color: #e68a00; }
@@ -378,10 +383,12 @@ body.loaded .site-nav.location-header li {
         transform: translateX(-50%); }
       .team ul li h5 {
         width: 100%;
-        color: #e68a00; }
+        color: #e68a00;
+        margin-bottom: 1em; }
       .team ul li h6 {
         width: 100%;
-        color: #6598d1; }
+        color: #6598d1;
+        margin-bottom: 1em; }
       .team ul li p {
         width: 70%;
         margin: 0 auto;
@@ -397,6 +404,10 @@ body.loaded .site-nav.location-header li {
           .team ul li ul li i {
             font-size: 1.5em;
             color: #6598d1; }
+
+.loaded .team li {
+  opacity: 1;
+  transform: translateY(0); }
 
 .site-footer {
   background: #070707;
