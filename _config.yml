@@ -13,11 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: GamingAcademy
+title: Gaming Academy
 email: stanimir.georgiev_99@abv.bg
 description: Don't be just a human, become a legend!
 destination: docs
 baseurl: "/Pro_Gaming_Academy" # the subpath of your site, e.g. /blog
+# baseurl: "" # the subpath of your site, e.g. /blog
+
 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
@@ -71,3 +73,46 @@ navigation:
     text: Login
   - url: /register
     text: Register
+
+game-navigation:
+  - url: /league
+    text: League of Legends
+    logo: /images/league.png
+  - url: /fortnite
+    text: Fortnite Battle Royale
+    logo: /images/fortnite.png
+  - url: /cs
+    text: Counter Strike - Global Offensive
+    logo: /images/cs.png
+  - url: /hearthstone
+    text: Hearthstone - Heroes of Warcraft
+    logo: /images/hs.png
+  - url: /pubg
+    text: Playerunknown's Battlegrounds
+    logo: /images/pubg.png
+
+social-media:
+  - icon: fa-facebook-f
+    url: https://www.facebook.com
+  - icon: fa-twitter
+    url: https://twitter.com
+  - icon: fa-twitch
+    url: https://www.twitch.tv
+  - icon: fa-youtube
+    url: https://www.youtube.com
+  - icon: fa-instagram
+    url: https://www.instagram.com
+
+sponsorship:
+  - image: /images/razer.png
+    name: Razer
+    url: https://www.razer.com
+  - image: /images/A1.png
+    name: A1
+    url: https://www.a1.bg
+  - image: /images/ea.png
+    name: EA Sports
+    url: https://www.easports.com
+  - image: /images/ps4.png
+    name: Playstation 4
+    url: https://www.playstation.com

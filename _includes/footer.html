@@ -1,6 +1,40 @@
 <footer class="site-footer">
-    <p>All rights reserved &copy; {{ site.title }}</p>
-
-    {% include navigation.html location="footer" %}
-
+    <div class="footer-wrapper">
+        <section class="logo">
+            <a href="{{ site.baseurl }}/"><img src="{{site.baseurl}}/images/logo.png"></a>
+            <ul>
+               {% for item in site.social-media %}
+                    <li>
+                        <a href="{{ item.url }}">
+                            <i class="fab {{ item.icon }}"></i>
+                        </a>
+                    </li>
+               {% endfor %}
+            </ul>
+        
+            <h5>All rights reserved &copy; {{ site.title }}</h5>
+            <div class="addition">
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Customer Support</a>
+            </div>
+        </section>
+        <section class="sponsorship">
+            <h5>Sponsorship</h5>
+            <ul>
+                {% for item in site.sponsorship %}
+                    <li>
+                        <a href="{{ item.url }}">
+                            <img src="{{ site.baseurl }}{{ item.image }}" alt="sponsor">
+                            <h6>{{ item.name }}</h6>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+       <sectioon class="footer-games">
+           <h5>Games</h5>
+            {% include game-navigation.html %}
+       </sectioon>
+    </div>  
 </footer>

@@ -1,0 +1,30 @@
+.site-header {
+    background: #070707;
+    border-bottom: 5px solid #6598d1;
+    .header-wrapper {
+      padding: 0 2em;
+      display: flex;
+      align-items: center;
+    }
+  }
+  
+  .header-wrapper {
+    a {
+      padding: 0;
+      margin: 0;
+      display: block;
+    }
+    img {
+      width: 200px;
+      height: 100px;
+      display: block;
+      opacity: 0;
+      transform: translateY(10em);
+      transition: opacity 1s ease-in-out 0.8s, transform 1s ease-out 0.8s;
+    }
+  }
+  
+  body.loaded .header-wrapper img {
+    opacity: 1;
+    transform: translateY(0);
+  }

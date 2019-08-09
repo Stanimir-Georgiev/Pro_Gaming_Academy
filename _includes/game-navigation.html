@@ -1,0 +1,12 @@
+<nav class="game-nav">
+    <ul>
+        {% for item in site.game-navigation %}
+            <li>
+                <a href="{{ site.baseurl }}{{ item.url }}">
+                    <img src="{{ site.baseurl }}{{ item.logo }}" alt="">
+                    <h6>{{ item.text }}</h6>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</nav>
