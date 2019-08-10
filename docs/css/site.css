@@ -243,7 +243,7 @@ body.loaded .site-nav.location-header li {
 .site-banner {
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("{{ site.url }}/images/kv.jpg") no-repeat center center; }
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/Pro_Gaming_Academy/images/kv.jpg") no-repeat center center; }
   .site-banner .addvert {
     width: 60%;
     display: flex;
