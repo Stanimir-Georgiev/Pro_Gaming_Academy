@@ -17,8 +17,8 @@ title: Gaming Academy
 email: stanimir.georgiev_99@abv.bg
 description: Don't be just a human, become a legend!
 destination: docs
-baseurl: "/Pro_Gaming_Academy" # the subpath of your site, e.g. /blog
-# baseurl: ""
+# baseurl: "/Pro_Gaming_Academy" # the subpath of your site, e.g. /blog
+baseurl: ""
 
 
 url: "" # the base hostname & protocol for your site, e.g. http://example.com

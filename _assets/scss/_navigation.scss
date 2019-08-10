@@ -56,7 +56,7 @@
       top: 100%;
       left: 50%;
       transform: translateX(-50%);
-      border: 2px solid #6598d1;
+      border: 2px solid var(--main-blue-color);
       box-shadow: 4px 15px 42px -9px rgba(0, 4, 105, 1);
     }
     ul li:hover {
@@ -78,11 +78,11 @@
       a {
         text-decoration: none;
         font-family: 'Lacquer', sans-serif;
-        color: #6598d1;
+        color: var(--main-blue-color);
         padding: 0 0.2em;
       }
       ul li:hover {
-        background: #6598d1;
+        background: var(--main-blue-color);
         a {
           color: white;
         }
@@ -91,14 +91,14 @@
     ul li {
       &:nth-child(7) a, &:nth-child(8) a {
         font-weight: bolder;
-        color: #e68a00;
+        color: var(--main-gold-color);
       }
     }
   }
   
   @keyframes border {
     0% {
-      border-color: #e68a00;
+      border-color: var(--main-gold-color);
     }
   
     25% {
@@ -114,7 +114,7 @@
     }
   
     100% {
-      border-color: #e68a00;
+      border-color: var(--main-gold-color);
     }
   }
   @keyframes transition {

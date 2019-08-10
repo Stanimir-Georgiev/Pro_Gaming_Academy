@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Lacquer&display=swap");
 @import url("https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap");
+:root {
+  --main-blue-color: #6598d1;
+  --main-gold-color: #e68a00;
+  --main-grey-color: #797979;
+  --color-link-default: #0A0;
+  --main-background-color: #070707; }
+
 *, *:before, *:after {
   margin: 0;
   padding: 0;
@@ -67,7 +74,7 @@ blockquote .author:before {
   content: '\2014';
   padding-right: 0.5em; }
 
-@media (min-width: 320px) {
+@media (min-width: var(--phone-width)) {
   html {
     font-size: 10px; } }
 
@@ -93,11 +100,11 @@ blockquote .author:before {
 
 @media (min-width: 1600px) {
   html {
-    font-size: 22px; } }
+    font-size: 26px; } }
 
 .site-header {
-  background: #070707;
-  border-bottom: 5px solid #6598d1; }
+  background: var(--main-background-color);
+  border-bottom: 5px solid var(--main-blue-color); }
   .site-header .header-wrapper {
     padding: 0 2em;
     display: flex;
@@ -166,7 +173,7 @@ body.loaded .site-nav.location-header li {
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
-  border: 2px solid #6598d1;
+  border: 2px solid var(--main-blue-color);
   box-shadow: 4px 15px 42px -9px #000469; }
 
 .site-nav.location-header ul li:hover {
@@ -188,21 +195,21 @@ body.loaded .site-nav.location-header li {
 .site-nav.location-header li a {
   text-decoration: none;
   font-family: 'Lacquer', sans-serif;
-  color: #6598d1;
+  color: var(--main-blue-color);
   padding: 0 0.2em; }
 
 .site-nav.location-header li ul li:hover {
-  background: #6598d1; }
+  background: var(--main-blue-color); }
   .site-nav.location-header li ul li:hover a {
     color: white; }
 
 .site-nav.location-header ul li:nth-child(7) a, .site-nav.location-header ul li:nth-child(8) a {
   font-weight: bolder;
-  color: #e68a00; }
+  color: var(--main-gold-color); }
 
 @-webkit-keyframes border {
   0% {
-    border-color: #e68a00; }
+    border-color: var(--main-gold-color); }
   25% {
     border-color: #6666ff; }
   50% {
@@ -210,11 +217,11 @@ body.loaded .site-nav.location-header li {
   75% {
     border-color: #6666ff; }
   100% {
-    border-color: #e68a00; } }
+    border-color: var(--main-gold-color); } }
 
 @keyframes border {
   0% {
-    border-color: #e68a00; }
+    border-color: var(--main-gold-color); }
   25% {
     border-color: #6666ff; }
   50% {
@@ -222,7 +229,7 @@ body.loaded .site-nav.location-header li {
   75% {
     border-color: #6666ff; }
   100% {
-    border-color: #e68a00; } }
+    border-color: var(--main-gold-color); } }
 
 @-webkit-keyframes transition {
   0% {
@@ -243,7 +250,8 @@ body.loaded .site-nav.location-header li {
 .site-banner {
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/Pro_Gaming_Academy/images/kv.jpg") no-repeat center center; }
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/kv.jpg") no-repeat center center;
+  background-size: cover; }
   .site-banner .addvert {
     width: 60%;
     display: flex;
@@ -263,13 +271,13 @@ body.loaded .site-nav.location-header li {
       -webkit-animation-delay: 1.5s;
               animation-delay: 1.5s; }
     .site-banner .addvert h2 {
-      color: #e68a00;
+      color: var(--main-gold-color);
       text-shadow: 1px 1px white; }
       .site-banner .addvert h2:last-child {
         padding-bottom: 2em; }
     .site-banner .addvert h3 {
       color: white;
-      text-shadow: 1px 1px #e68a00; }
+      text-shadow: 1px 1px var(--main-gold-color); }
       .site-banner .addvert h3:first-child {
         padding-top: 3em; }
   .site-banner .button-wrapper {
@@ -281,14 +289,14 @@ body.loaded .site-nav.location-header li {
       font-size: 1.5em;
       padding: 0.5em 1em;
       border: 3px solid white;
-      color: #e68a00;
+      color: var(--main-gold-color);
       border-radius: 0.4em;
       background: rgba(7, 7, 7, 0.5);
       -webkit-animation: button 3s ease-in-out 2.5s forwards;
               animation: button 3s ease-in-out 2.5s forwards;
       opacity: 0; }
       .site-banner .button-wrapper .button:hover {
-        border-color: #e68a00;
+        border-color: var(--main-gold-color);
         color: white; }
 
 .loaded .button {
@@ -334,15 +342,15 @@ body.loaded .site-nav.location-header li {
 
 .team {
   padding: 0 4em;
-  background: #070707; }
+  background: var(--main-background-color); }
   .team h2 {
     text-align: center;
     margin-bottom: 2em;
-    color: #e68a00; }
+    color: var(--main-gold-color); }
     .team h2::after {
       display: block;
       content: '';
-      border-bottom: 5px solid #6598d1;
+      border-bottom: 5px solid var(--main-blue-color);
       max-width: 15%;
       margin: 1em auto; }
   .team ul {
@@ -359,8 +367,8 @@ body.loaded .site-nav.location-header li {
       transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;
       transition-delay: 1.5s; }
       .team ul li:hover ul {
-        background: #6598d1 i;
-          background-color: #e68a00; }
+        background: var(--main-blue-color) i;
+          background-color: var(--main-gold-color); }
       .team ul li .team-wrapper {
         box-shadow: 10px 10px 45px 0px rgba(255, 255, 255, 0.75);
         width: 70%;
@@ -383,11 +391,11 @@ body.loaded .site-nav.location-header li {
         transform: translateX(-50%); }
       .team ul li h5 {
         width: 100%;
-        color: #e68a00;
+        color: var(--main-gold-color);
         margin-bottom: 1em; }
       .team ul li h6 {
         width: 100%;
-        color: #6598d1;
+        color: var(--main-blue-color);
         margin-bottom: 1em; }
       .team ul li p {
         width: 70%;
@@ -403,24 +411,124 @@ body.loaded .site-nav.location-header li {
           flex-basis: 0; }
           .team ul li ul li i {
             font-size: 1.5em;
-            color: #6598d1; }
+            color: var(--main-blue-color); }
 
 .loaded .team li {
   opacity: 1;
   transform: translateY(0); }
 
+.form {
+  background: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7)), url("../../images/register.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2em; }
+  .form a {
+    width: 100%;
+    text-align: center; }
+  .form img {
+    width: 200px;
+    height: 100px; }
+  .form .form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 35%;
+    margin: 0 auto;
+    background: rgba(7, 7, 7, 0.7);
+    border-radius: 2em; }
+    .form .form-wrapper h2 {
+      text-align: center;
+      width: 100%;
+      padding-top: 1em;
+      color: var(--main-gold-color); }
+    .form .form-wrapper a {
+      font-weight: bold;
+      font-size: 1.2em;
+      color: var(--main-gold-color);
+      margin-bottom: 1em; }
+    .form .form-wrapper form {
+      width: 100%;
+      text-align: center; }
+      .form .form-wrapper form a {
+        width: 100%;
+        display: block;
+        color: var(--main-gold-color);
+        margin-bottom: 1em;
+        font-weight: normal;
+        font-size: 1em; }
+      .form .form-wrapper form input[type="submit"] {
+        padding: 0.5em 2em;
+        background: var(--main-blue-color);
+        color: white;
+        margin-bottom: 1em;
+        font-weight: bold; }
+        .form .form-wrapper form input[type="submit"]:hover {
+          background: white;
+          color: var(--main-blue-color);
+          border-color: var(--main-blue-color); }
+      .form .form-wrapper form p {
+        padding: 0.4em 0;
+        background: rgba(45, 44, 42, 0.9);
+        max-width: 85%;
+        margin: 1em auto; }
+        .form .form-wrapper form p input {
+          background: rgba(30, 29, 27, 0.7);
+          outline: none;
+          border: 1px solid #1e1d1b;
+          width: 85%;
+          padding: 0.4em; }
+          .form .form-wrapper form p input:focus {
+            border: 1px solid white; }
+          .form .form-wrapper form p input::-webkit-input-placeholder {
+            color: white; }
+          .form .form-wrapper form p input::-moz-placeholder {
+            color: white; }
+          .form .form-wrapper form p input:-ms-input-placeholder {
+            color: white; }
+          .form .form-wrapper form p input::-ms-input-placeholder {
+            color: white; }
+          .form .form-wrapper form p input::placeholder {
+            color: white; }
+        .form .form-wrapper form p i {
+          margin: 0 0.6em;
+          color: white; }
+      .form .form-wrapper form .forgot-password {
+        display: flex;
+        justify-content: space-between;
+        margin: 2em 0 4em 0; }
+    .form .form-wrapper .form-social {
+      text-align: center; }
+      .form .form-wrapper .form-social p {
+        color: white; }
+      .form .form-wrapper .form-social ul {
+        display: flex;
+        justify-content: center; }
+        .form .form-wrapper .form-social ul li {
+          list-style: none outside; }
+          .form .form-wrapper .form-social ul li i {
+            font-size: 1.5em;
+            margin-right: 0.5em;
+            color: white;
+            padding: 0.3em;
+            border-radius: 50%;
+            background: rgba(45, 44, 42, 0.7); }
+            .form .form-wrapper .form-social ul li i:nth-child(3) {
+              margin-right: 0; }
+
 .site-footer {
-  background: #070707;
-  border-top: 5px solid #6598d1; }
+  background: var(--main-background-color);
+  border-top: 5px solid var(--main-blue-color); }
   .site-footer h5 {
-    color: #e68a00;
+    color: var(--main-gold-color);
     margin-bottom: 1.5em;
     opacity: 0;
     transform: translateX(1em);
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;
     transition-delay: 1.7s; }
   .site-footer h6 {
-    color: #e68a00; }
+    color: var(--main-gold-color); }
   .site-footer .footer-wrapper {
     padding: 1em 2em;
     display: flex;
@@ -460,10 +568,10 @@ body.loaded .site-nav.location-header li {
       display: flex;
       margin-bottom: 0.5em; }
       .site-footer li a h6 {
-        color: #6598d1;
+        color: var(--main-blue-color);
         margin-left: 0.7em; }
       .site-footer li a:hover h6 {
-        color: #e68a00; }
+        color: var(--main-gold-color); }
   .site-footer img {
     width: 30px;
     height: 30px; }
@@ -481,9 +589,9 @@ body.loaded .site-nav.location-header li {
     margin-right: 0.5em; }
   .logo ul i {
     font-size: 1.5em;
-    color: #e68a00; }
+    color: var(--main-gold-color); }
     .logo ul i:hover {
-      color: #6598d1; }
+      color: var(--main-blue-color); }
 
 .logo .addition {
   margin-top: 1em;
@@ -494,7 +602,7 @@ body.loaded .site-nav.location-header li {
   .logo .addition a {
     font-size: 0.6em;
     text-align: center;
-    color: #797979;
+    color: var(--main-grey-color);
     padding-right: 0.4em; }
     .logo .addition a:hover {
       color: white; }

@@ -1,6 +1,50 @@
 ---
 layout: main
-title: Contacts
-sidebar: 1
+title: Contact Us
 permalink: /contacts/
 ---
+
+<section class="contacts">
+    <h2>{{ page.title }}</h2>
+    <div class="contact-form">
+        <form action="#">
+            <p>
+                <input type="text" name="name" id="name">
+            </p>
+            <p>
+                <input type="email" name="email" id="email">
+            </p>
+            <p>
+                <input type="text" name="subject" id="subjct">
+            </p>
+            <textarea name="content" id="content" cols="30" rows="10"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    <div class="numbers">
+        <div class="first-part">
+            <i class="fas fa-address-book"></i>
+            <h6>Need 24/7 Support</h6>
+            <a href="#">Contact Support</a>
+        </div>
+        <div class="second-part">
+            <ul>
+                <li>
+                    <i class="fas fa-phone-square-alt"></i>
+                    <h6>call us now</h6>
+                    <h6>02/ 900 00</h6>
+                </li>
+                <li>
+                    <i class="fas fa-clock"></i>
+                    <h6>work time</h6>
+                    <p>8am - 8pm</p>
+                </li>
+                <li>
+                    <i class="fas fa-envelope"></i>
+                    <h6>Mailing address</h6>
+                    <p>100 Example Street,  Sofia Bulgaria</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

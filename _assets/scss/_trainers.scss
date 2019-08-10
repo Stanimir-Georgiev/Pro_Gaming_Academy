@@ -1,14 +1,14 @@
 .team {
     padding: 0 4em;
-    background: #070707;
+    background: var(--main-background-color);
     h2 {
         text-align: center;
         margin-bottom: 2em;
-        color: #e68a00;
+        color: var(--main-gold-color);
         &::after {
             display: block;
             content: '';
-            border-bottom: 5px solid #6598d1;
+            border-bottom: 5px solid var(--main-blue-color);
             max-width: 15%;
             margin: 1em auto
         }
@@ -27,9 +27,9 @@
             transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;            
             transition-delay: 1.5s;
             &:hover ul {
-                background: #6598d1
+                background: var(--main-blue-color)
                 i {
-                    color: #e68a00;
+                    color: var(--main-gold-color);
                 }
                 
             }
@@ -60,12 +60,12 @@
             }
             h5 {
                 width: 100%;
-                color: #e68a00;
+                color: var(--main-gold-color);
                 margin-bottom: 1em;
             }
             h6 {
                 width: 100%;
-                color: #6598d1;
+                color: var(--main-blue-color);
                 margin-bottom: 1em;
             }
             p {
@@ -83,7 +83,7 @@
                     flex-basis: 0;
                     i {
                         font-size: 1.5em;
-                        color: #6598d1
+                        color: var(--main-blue-color)
                     }
                 }
             }

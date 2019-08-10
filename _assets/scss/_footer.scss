@@ -1,8 +1,8 @@
 .site-footer {
-    background: #070707;
-    border-top: 5px solid #6598d1;
+    background: var(--main-background-color);
+    border-top: 5px solid var(--main-blue-color);
     h5 {
-        color: #e68a00;
+        color: var(--main-gold-color);
         margin-bottom: 1.5em;
         opacity: 0;
         transform: translateX(1em);
@@ -10,7 +10,7 @@
         transition-delay: 1.7s;        
     }
     h6 {
-     color: #e68a00;
+     color: var(--main-gold-color);
     }
     .footer-wrapper {
         padding: 1em 2em;
@@ -29,11 +29,11 @@
             display: flex;
             margin-bottom: 0.5em;
             h6 {
-                color: #6598d1;
+                color: var(--main-blue-color);
                 margin-left: 0.7em;
             }
             &:hover h6 {
-                color: #e68a00
+                color: var(--main-gold-color)
             }
         }
     }
@@ -60,9 +60,9 @@
             }
             i {
                 font-size: 1.5em;
-                color: #e68a00;
+                color: var(--main-gold-color);
                 &:hover {
-                    color: #6598d1
+                    color: var(--main-blue-color)
                 }
             }
     }
@@ -75,7 +75,7 @@
         a {
             font-size: 0.6em;
             text-align: center;
-            color: #797979;
+            color: var(--main-grey-color);
             padding-right: 0.4em;
             &:hover {
                 color: white

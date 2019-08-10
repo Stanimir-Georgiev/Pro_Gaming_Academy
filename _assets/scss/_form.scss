@@ -1,0 +1,115 @@
+.form {
+    background: linear-gradient( rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7) ), url('../../images/register.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+    a {
+        width: 100%;
+        text-align: center;
+    }
+    img {
+        width: 200px;
+        height: 100px;
+    }
+    .form-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 35%;
+        margin: 0 auto;
+        background: rgba(7, 7, 7, 0.7);
+        border-radius: 2em;
+        h2 {
+            text-align: center;
+            width: 100%;
+            padding-top: 1em;
+            color: var(--main-gold-color);
+        }
+        a {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: var(--main-gold-color);
+            margin-bottom: 1em;
+        }
+        form {
+            width: 100%;
+            text-align: center;
+
+            a {
+                width: 100%;
+                display: block;
+                color: var(--main-gold-color);
+                margin-bottom: 1em;
+                font-weight: normal;
+                font-size: 1em;
+            }
+            input[type="submit"] {
+                padding: 0.5em 2em;
+                background: var(--main-blue-color);
+                color: white;
+                margin-bottom: 1em;
+                font-weight: bold;
+                &:hover {
+                    background: white;
+                    color: var(--main-blue-color);
+                    border-color: var(--main-blue-color)
+                }
+            }
+            p {
+                padding: 0.4em 0;
+                background: rgba(45, 44, 42, 0.9);
+                max-width: 85%;
+                margin: 1em auto;
+                input {
+                    background: rgba(30, 29, 27, 0.7);
+                    outline: none;
+                    border: 1px solid #1e1d1b;
+                    width: 85%;
+                    padding: 0.4em;
+                    &:focus {
+                        border: 1px solid white
+                    }
+                    &::placeholder {
+                        color: white
+                    }
+                }
+                i {
+                    margin: 0 0.6em;
+                    color: white;
+                }
+            }
+            .forgot-password {
+                display: flex;
+                justify-content: space-between;
+                margin: 2em 0 4em 0;
+            }
+        }
+        .form-social {
+            text-align: center;
+            
+            p {
+                color: white
+            }
+            ul {
+                display: flex;
+                justify-content: center;
+                li {
+                    list-style: none outside;
+                    i {
+                        font-size: 1.5em;
+                        margin-right: 0.5em;
+                        color: white;
+                        padding: 0.3em;
+                        border-radius: 50%;
+                        background: rgba(45, 44, 42, 0.7);
+                        &:nth-child(3) {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

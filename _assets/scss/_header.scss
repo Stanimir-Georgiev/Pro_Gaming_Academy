@@ -1,6 +1,6 @@
 .site-header {
-    background: #070707;
-    border-bottom: 5px solid #6598d1;
+    background: var(--main-background-color);
+    border-bottom: 5px solid var(--main-blue-color);
     .header-wrapper {
       padding: 0 2em;
       display: flex;
