@@ -96,7 +96,9 @@ blockquote .author:before {
 
 @media (min-width: 1024px) {
   html {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .numbers i {
+    font-size: 1em; } }
 
 @media (min-width: 1600px) {
   html {
@@ -250,7 +252,7 @@ body.loaded .site-nav.location-header li {
 .site-banner {
   display: flex;
   flex-wrap: wrap;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/kv.jpg") no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/Pro_Gaming_Academy/images/kv.jpg") no-repeat center center;
   background-size: cover; }
   .site-banner .addvert {
     width: 60%;
@@ -418,7 +420,7 @@ body.loaded .site-nav.location-header li {
   transform: translateY(0); }
 
 .form {
-  background: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7)), url("../../images/register.jpg") no-repeat center center;
+  background: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7)), url("/Pro_Gaming_Academy/images/register.jpg") no-repeat center center;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
@@ -516,6 +518,125 @@ body.loaded .site-nav.location-header li {
             background: rgba(45, 44, 42, 0.7); }
             .form .form-wrapper .form-social ul li i:nth-child(3) {
               margin-right: 0; }
+
+.contacts {
+  background: var(--main-background-color);
+  padding: 1em 3em;
+  display: flex;
+  flex-wrap: wrap; }
+  .contacts h2 {
+    color: var(--main-gold-color);
+    width: 100%;
+    margin-bottom: 1em; }
+  .contacts .contact-form {
+    flex-basis: 60%; }
+    .contacts .contact-form form {
+      width: 100%;
+      margin: 0 auto; }
+      .contacts .contact-form form p {
+        width: 100%; }
+      .contacts .contact-form form input {
+        width: 60%;
+        padding: 0.3em 1em;
+        border-radius: 0.5em;
+        border: 3px solid var(--main-grey-color);
+        outline: none;
+        color: var(--main-blue-color);
+        font-size: 1.2em; }
+        .contacts .contact-form form input:hover {
+          border-color: var(--main-gold-color); }
+        .contacts .contact-form form input:focus {
+          border-color: #0A0; }
+        .contacts .contact-form form input::-webkit-input-placeholder {
+          color: var(--main-grey-color); }
+        .contacts .contact-form form input::-moz-placeholder {
+          color: var(--main-grey-color); }
+        .contacts .contact-form form input:-ms-input-placeholder {
+          color: var(--main-grey-color); }
+        .contacts .contact-form form input::-ms-input-placeholder {
+          color: var(--main-grey-color); }
+        .contacts .contact-form form input::placeholder {
+          color: var(--main-grey-color); }
+      .contacts .contact-form form textarea {
+        padding: 0.3em 1em;
+        width: 60%;
+        border-radius: 0.5em;
+        border: 3px solid var(--main-grey-color);
+        outline: none;
+        margin-bottom: 2em; }
+        .contacts .contact-form form textarea::-webkit-input-placeholder {
+          color: var(--main-grey-color); }
+        .contacts .contact-form form textarea::-moz-placeholder {
+          color: var(--main-grey-color); }
+        .contacts .contact-form form textarea:-ms-input-placeholder {
+          color: var(--main-grey-color); }
+        .contacts .contact-form form textarea::-ms-input-placeholder {
+          color: var(--main-grey-color); }
+        .contacts .contact-form form textarea::placeholder {
+          color: var(--main-grey-color); }
+        .contacts .contact-form form textarea:focus {
+          border-color: #0A0; }
+        .contacts .contact-form form textarea:hover {
+          border-color: var(--main-gold-color); }
+      .contacts .contact-form form input[type="submit"] {
+        width: 15%;
+        margin: 0 auto;
+        background: var(--main-background-color);
+        color: var(--main-gold-color);
+        border-color: white; }
+        .contacts .contact-form form input[type="submit"]:hover {
+          border-color: var(--main-gold-color);
+          color: white; }
+  .contacts .numbers {
+    flex-basis: 40%;
+    margin-bottom: 4em; }
+    .contacts .numbers .first-part {
+      width: 100%;
+      margin-left: auto;
+      background: white;
+      padding: 0.5em;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      border-top-left-radius: 0.5em;
+      border-top-right-radius: 0.5em; }
+      .contacts .numbers .first-part .icon-wrapper {
+        padding: 1.5em;
+        font-size: 1.5em; }
+        .contacts .numbers .first-part .icon-wrapper i {
+          color: var(--main-blue-color);
+          font-size: 1.5em; }
+      .contacts .numbers .first-part h6 {
+        color: var(--main-gold-color);
+        font-size: 1.4em; }
+      .contacts .numbers .first-part a {
+        color: var(--main-blue-color);
+        font-size: 1.2em;
+        font-weight: bold;
+        text-shadow: 1px 1px black; }
+    .contacts .numbers .second-part {
+      width: 100%;
+      margin-left: auto;
+      background: var(--main-gold-color);
+      padding: 0 0.8em;
+      border-bottom-left-radius: 0.5em;
+      border-bottom-right-radius: 0.5em; }
+      .contacts .numbers .second-part ul {
+        padding: 0; }
+        .contacts .numbers .second-part ul li {
+          list-style: none outside;
+          display: flex;
+          padding: 0.5em;
+          align-items: center; }
+      .contacts .numbers .second-part .icon-wrapper {
+        padding: 1.5em; }
+        .contacts .numbers .second-part .icon-wrapper i {
+          font-size: 2em; }
+      .contacts .numbers .second-part h6 {
+        color: var(--main-background-color);
+        font-size: 1.2em; }
+      .contacts .numbers .second-part i {
+        color: white; }
 
 .site-footer {
   background: var(--main-background-color);
