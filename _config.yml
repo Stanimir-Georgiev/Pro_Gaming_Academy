@@ -57,12 +57,12 @@ navigation:
         text: Academy
       - url: /trainers
         text: Trainers
-      - url: /questions
-        text: Questions
-  - url: /blog
-    text: Blog
-  - url: /trainings
-    text: Trainings
+      # - url: /questions
+      #   text: Questions
+  # - url: /blog
+  #   text: Blog
+  # - url: /trainings
+  #   text: Trainings
   - url: /proteams
     text: Teams
   - url: /achievements
