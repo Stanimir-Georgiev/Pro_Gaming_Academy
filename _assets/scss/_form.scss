@@ -5,6 +5,10 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 2em;
+    @include bp(1024) {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
     a {
         width: 100%;
         text-align: center;

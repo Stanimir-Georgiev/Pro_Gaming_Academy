@@ -1,6 +1,36 @@
 ---
 layout: main
-title: Achievements and Trophies
-sidebar: 1
+title: The greatest achievements of our teams
 permalink: /achievements/
+images:
+  - url: /images/trophy1.jpg
+    number: 1
+  - url: /images/trophy2.jpg
+    number: 2
+  - url: /images/trophy3.jpg
+    number: 3
+  - url: /images/trophy4.jpg
+    number: 4
+  - url: /images/trophy5.jpg
+    number: 5
+  - url: /images/trophy6.jpg
+    number: 6
+  - url: /images/trophy7.jpg
+    number: 7
+  - url: /images/trophy8.png
+    number: 8
+  - url: /images/trophy9.jpg
+    number: 9
+  - url: /images/trophy10.jpg
+    number: 10
 ---
+<section class="gallery-wrapper">
+<h2>{{ page.title }}</h2>
+<div class="gallery">
+    {% for item in page.images %}
+        <div class="gallery-item-{{ item.number }}">
+            <img src="{{ site.baseurl }}{{ item.url }}" alt="">
+        </div>
+    {% endfor %}
+</div>
+</section>
