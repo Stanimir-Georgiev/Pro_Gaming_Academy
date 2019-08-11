@@ -1,5 +1,5 @@
 .form {
-    background: linear-gradient( rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7) ), url('/Pro_Gaming_Academy/images/register.jpg') no-repeat center center;
+    background: linear-gradient( rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7) ), url('../../images/register.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -21,6 +21,24 @@
         margin: 0 auto;
         background: rgba(7, 7, 7, 0.7);
         border-radius: 2em;
+        @include bp(320) {
+            width: 100%
+        }
+        @include bp(480) {
+            width: 70%
+        }
+        @include bp(640) {
+            width: 60%
+        }
+        @include bp(768) {
+            width: 45%
+        }
+        @include bp(960) {
+            width: 40%
+        }
+        @include bp(1024) {
+            width: 45%
+        }
         h2 {
             text-align: center;
             width: 100%;
@@ -56,12 +74,24 @@
                     color: var(--main-blue-color);
                     border-color: var(--main-blue-color)
                 }
+                @include bp(640) {
+                    width: 60%
+                }
+                @include bp(768) {
+                    width: 60%
+                }
+                @include bp(960) {
+                    width: 60%
+                }
             }
             p {
                 padding: 0.4em 0;
                 background: rgba(45, 44, 42, 0.9);
                 max-width: 85%;
                 margin: 1em auto;
+                @include bp(640) {
+                    margin: 2em auto;
+                }
                 input {
                     background: rgba(30, 29, 27, 0.7);
                     outline: none;
@@ -84,6 +114,12 @@
                 display: flex;
                 justify-content: space-between;
                 margin: 2em 0 4em 0;
+                @include bp(768) {
+                    margin: 2em 0;
+                }
+                @include bp(960) {
+                    margin: 2em 0;
+                }
             }
         }
         .form-social {

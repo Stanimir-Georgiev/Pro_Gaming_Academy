@@ -1,0 +1,42 @@
+@mixin bp($point) {
+
+    @if $point == 320 {
+        @media (min-width: 320px) and (max-width: 479px) {
+            @content;
+        }
+    }
+
+    @else if $point == 480 {
+        @media (min-width: 480px) and (max-width: 639px) {
+            @content;
+        }
+    }
+
+    @else if $point == 640 {
+        @media (min-width: 640px) and (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @else if $point == 768 {
+        @media (min-width: 768px) and (max-width: 959px) {
+            @content;
+        }
+    }
+
+    @else if $point == 960 {
+        @media (min-width: 960px) and (max-width: 1023px) {
+            @content;
+        }
+    }
+    @else if $point == 1024 {
+        @media (min-width: 1024px) and (max-width: 1599px) {
+            @content;
+        }
+    }
+    @else if $point == 1600 {
+        @media (min-width: 1600px) and (max-width: 1920px) {
+            @content;
+        }
+    }
+}

@@ -1,41 +1,42 @@
-@media (min-width: var(--phone-width)) {
+@media (min-width: 320px) and (max-width: 479px) {
     html {
-        font-size: 10px
+        font-size: 10px;
     }
-}
-@media (min-width: 480px) {
+  }
+@media (min-width: 480px) and (max-width: 639px) {
     html {
-        font-size: 10px
+        font-size: 12px;
     }
-}
-@media (min-width: 640px) {
+  }
+  @media (min-width: 640px) and (max-width: 767px) {
     html {
-        font-size: 10px
+        font-size: 12px;
     }
-}
-@media (min-width: 768px) {
+  }
+  @media (min-width: 768px) and (max-width: 959px) {
     html {
-        font-size: 12px
+        font-size: 12px;
     }
-}
-@media (min-width: 960px) {
+  }
+  @media (min-width: 960px) and (max-width: 1023px) {
     html {
-        font-size: 14px
+        font-size: 14px;
     }
-}
-@media (min-width: 1024px) {
+  }
+  @media (min-width: 1024px) and (max-width: 1599px) {
     html {
-        font-size: 16px
+        font-size: 16px;
     }
-    .numbers {
-        i {
-            font-size: 1em;
-        }
-    }
-}
-
-@media (min-width: 1600px) {
+  }
+  @media (min-width: 1600px) {
     html {
-        font-size: 26px
+        font-size: 22px;
     }
-}
+    body {
+      background: var(--main-background-color);
+    }
+    .site {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+  }

@@ -16,6 +16,12 @@
     ul {
         display: flex;
         flex-wrap: wrap;
+        @include bp(320) {
+            display: block;
+        }
+        @include bp(480) {
+            display: block;
+        }
         li {
             list-style: none outside;
             text-align: center;
@@ -26,12 +32,43 @@
             transform: translateY(-2em);
             transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;            
             transition-delay: 1.5s;
+            @include bp(320) {
+                margin-bottom: 15em;
+                margin-top: 15em
+            }
+            @include bp(480) {
+                margin-bottom: 10em;
+                margin-top: 10em
+            }
+            @include bp(640) {
+                flex-basis: 45%;
+                margin-bottom: 5em;
+                margin-top: 5em
+            }
+            @include bp(768) {
+                flex-basis: 45%;
+                margin-bottom: 5em;
+                margin-top: 5em
+            }
+            @include bp(960) {
+                flex-basis: 45%;
+                margin-bottom: 5em;
+                margin-top: 5em
+            }
+            @include bp(1024) {
+                flex-basis: 45%;
+                margin-bottom: 2em;
+                margin-top: 2em
+            }
+            @include bp(1600) {
+                margin-bottom: 5em;
+                margin-top: 5em;
+            }
             &:hover ul {
-                background: var(--main-blue-color)
+                background: var(--main-blue-color);
                 i {
                     color: var(--main-gold-color);
                 }
-                
             }
             .team-wrapper {
                 box-shadow: 10px 10px 45px 0px rgba(255,255,255,0.75);
@@ -44,6 +81,39 @@
                     display: block;
                     content: '';
                     padding-top: 50%;
+                    @include bp(320) {
+                        padding-top: 30%;
+                    }
+                    @include bp(480) {
+                        padding-top: 40%;
+                    }
+                    @include bp(640) {
+                        padding-top: 40%;
+                    }
+                    @include bp(768) {
+                        padding-top: 40%;
+                    }
+                    @include bp(960) {
+                        padding-top: 40%;
+                    }
+                }
+                @include bp(320) {
+                    width: 100%;
+                }
+                @include bp(480) {
+                    width: 70%;
+                }
+                @include bp(640) {
+                    width: 100%
+                }
+                @include bp(768) {
+                    width: 80%
+                }
+                @include bp(960) {
+                    width: 80%
+                }
+                @include bp(1600) {
+                    width: 90%
                 }
             }
             .image-wrapper {
@@ -55,8 +125,39 @@
                     position: absolute;
                     bottom: 70%;
                     left: 50%;
-                    transform: translateX(-50%)
+                    transform: translateX(-50%);
+                    @include bp(320) {
+                        max-width: 100px;
+                        max-height: 150px;
+                        bottom: 80%;
+                    }
+                    @include bp(480) {
+                        max-width: 100px;
+                        max-height: 150px;
+                        bottom: 80%;
+                    }
+                    @include bp(640) {
+                        max-width: 150px;
+                        max-height: 200px;
+                        bottom: 70%;
+                    }
+                    @include bp(768) {
+                        max-width: 150px;
+                        max-height: 200px;
+                        bottom: 70%;
+                    }
+                    @include bp(960) {
+                        max-width: 150px;
+                        max-height: 200px;
+                        bottom: 70%;
+                    }
+                    @include bp(1600) {
+                        bottom: 80%;
+                        width: 200px;
+                        height: 250px
+                    }
                 }
+                
             }
             h5 {
                 width: 100%;
@@ -77,6 +178,42 @@
                 background: white;
                 border-bottom-left-radius: 1em;
                 border-bottom-right-radius: 1em;
+                @include bp(320) {
+                    display: flex;
+                    justify-content: center;
+                    padding: 1em 0;
+                }
+                @include bp(480) {
+                    display: flex;
+                    justify-content: center;
+                    padding: 1em 0;
+                }
+                @include bp(640) {
+                    display: flex;
+                    justify-content: center;
+                    padding: 1em 0;
+                }
+                @include bp(768) {
+                    display: flex;
+                    justify-content: center;
+                    padding: 1em 0;
+                }
+                @include bp(960) {
+                    display: flex;
+                    justify-content: center;
+                    padding: 1em 0;
+                }
+                @include bp(1024) {
+                    display: flex;
+                    justify-content: center;
+                    padding: 1em 0;
+                }
+                @include bp(1600) {
+                    display: flex;
+                    justify-content: center;
+                    padding: 1em 0;
+                }
+               
                 li {
                     margin: 0 0 0 0.8em;
                     padding: 0;

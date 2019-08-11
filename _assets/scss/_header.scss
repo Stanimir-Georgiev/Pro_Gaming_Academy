@@ -5,6 +5,14 @@
       padding: 0 2em;
       display: flex;
       align-items: center;
+      @include bp(320) {
+       display: block;
+       text-align: center;
+      }
+      @include bp(480) {
+        display: block;
+        text-align: center;
+       }
     }
   }
   
@@ -21,6 +29,20 @@
       opacity: 0;
       transform: translateY(10em);
       transition: opacity 1s ease-in-out 0.8s, transform 1s ease-out 0.8s;
+      @include bp(320) {
+        width: 100px;
+        height: 50px;
+        margin: 0 auto;
+      }
+      @include bp(480) {
+        width: 200px;
+        height: 100px;
+        margin: 0 auto;
+      }
+      @include bp(1600) {
+        width: 350px;
+        height: 200px;
+      }
     }
   }
   

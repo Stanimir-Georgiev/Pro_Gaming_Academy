@@ -5,6 +5,15 @@
       display: flex;
       margin: 0;
       padding: 0;
+      @include bp(320) {
+       display: block;
+       margin: 0 auto;
+      }
+      @include bp(480) {
+        display: block;
+        margin: 0 auto;
+       }
+       
     }
     li {
       list-style: none outside;
@@ -16,6 +25,14 @@
       opacity: 0;
       transform: translate(-2em, -4em);
       transition: opacity 0.5s ease-in-out, transform 0.5s ease-out;
+      @include bp(320) {
+        margin: 1em 0;
+        padding: 0;
+      }
+      @include bp(480) {
+        margin: 1em 0;
+        padding: 0;
+      }
       &:nth-child(2) {
         transition-delay: 0.1s;
       }
@@ -29,6 +46,12 @@
         transition-delay: 0.6s;
         margin-left: 3em;
         transform: translateX(4em);
+        @include bp(320) {
+        margin-left: 0;
+        }
+        @include bp(480) {
+          margin-left: 0;
+        }
       }
       &:nth-child(6) {
         transition-delay: 0.7s;
@@ -52,19 +75,65 @@
       transform: translateX(-50%);
       border: 2px solid var(--main-blue-color);
       box-shadow: 4px 15px 42px -9px rgba(0, 4, 105, 1);
+      @include bp(320) {
+        opacity: 1;
+        pointer-events: all;
+        position: relative;
+        border: none;
+        box-shadow: none;
+      }
+      @include bp(480) {
+        opacity: 1;
+        pointer-events: all;
+        position: relative;
+        border: none;
+        box-shadow: none;
+      }
+      li {
+        &:nth-child(1) {
+          @include bp(320) {
+            display: none;
+          }
+          @include bp(480) {
+            display: none;
+          }
+        }
+      }
     }
     ul li:hover {
       animation: border 5s ease-in infinite;
+      @include bp(320) {
+        animation: none;
+      }
+      @include bp(480) {
+        animation: none;
+      }
       ul {
         opacity: 1;
         pointer-events: all;
         background: white;
         animation: transition 0.5s ease-in-out;
+        @include bp(320) {
+          background: var(--main-background-color);
+          animation: none
+        }
+        @include bp(480) {
+          background: var(--main-background-color);
+          animation: none
+        }
         li {
           padding: 0.7em;
           animation: none;
           border: none;
           margin: 0;
+          &:nth-child(1) {
+            @include bp(320) {
+            text-align: center;
+            opacity: 1;
+            transform: translateX(0);
+            transition: none;
+          }
+          }
         }
       }
     }
@@ -74,11 +143,34 @@
         font-family: 'Lacquer', sans-serif;
         color: var(--main-blue-color);
         padding: 0 0.2em;
+        i {
+          @include bp(320) {
+            display: none;
+          }
+          @include bp(480) {
+            display: none;
+          }
+        }
       }
       ul li:hover {
         background: var(--main-blue-color);
+        @include bp(320) {
+          background: inherit
+        }
+        @include bp(480) {
+          background: inherit
+        }
         a {
           color: white;
+          @include bp(320) {
+            color: var(--main-blue-color);
+          }
+          @include bp(479) {
+            color: var(--main-blue-color);
+          }
+          @include bp(480) {
+            color: var(--main-blue-color);
+          }
         }
       }
     }

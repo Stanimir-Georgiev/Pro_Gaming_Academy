@@ -10,6 +10,15 @@
     }
     .contact-form {
         flex-basis: 60%;
+        @include bp(320) {
+            flex-basis: 100%
+        }
+        @include bp(480) {
+            flex-basis: 100%
+        }
+        @include bp(640) {
+            flex-basis: 100%
+        }
         form {
             width: 100%;
             margin: 0 auto;
@@ -24,6 +33,15 @@
                 outline: none;
                 color: var(--main-blue-color);
                 font-size: 1.2em;
+                @include bp(320) {
+                    width: 100%
+                }
+                @include bp(480) {
+                    width: 100%
+                }
+                @include bp(640) {
+                    width: 100%
+                }
             &:hover {
                 border-color: var(--main-gold-color)
             }
@@ -42,6 +60,15 @@
                 border: 3px solid var(--main-grey-color);
                 outline: none;
                 margin-bottom: 2em;
+                @include bp(320) {
+                   width: 100%
+                }
+                @include bp(480) {
+                    width: 100%
+                }
+                @include bp(640) {
+                    width: 100%
+                }
                 &::placeholder {
                     color: var(--main-grey-color);
                 }
@@ -58,6 +85,15 @@
                 background: var(--main-background-color);
                 color: var(--main-gold-color);
                 border-color: white;
+                @include bp(320) {
+                   width: 50%
+                }
+                @include bp(480) {
+                    width: 50%
+                }
+                @include bp(640) {
+                    width: 50%
+                } 
                 &:hover {
                     border-color: var(--main-gold-color);
                     color: white;
@@ -67,6 +103,15 @@
     }
     .numbers {
         flex-basis: 40%;
+        @include bp(320) {
+           flex-basis: 100%
+        }
+        @include bp(480) {
+            flex-basis: 100%
+        }
+        @include bp(640) {
+            flex-basis: 100%
+        }
         .first-part {
             width: 100%;
             margin-left: auto;

@@ -8,6 +8,12 @@
      display: flex;
      justify-content: center;
      flex-wrap: wrap;
+     @include bp(320) {
+      margin: 0 auto
+    }
+    @include bp(480) {
+      margin: 0 auto
+    }
      h2, h3 {
       text-align: center;
       padding-top: 0.5em;
