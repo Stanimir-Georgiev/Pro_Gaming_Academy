@@ -1,4 +1,4 @@
-body.page-login {
+body.page-login, body.page-register {
     margin: 8em auto;
     background: linear-gradient( rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7) ), url('/Pro_Gaming_Academy/images/register.jpg') no-repeat center center;
     @include bp(480) {
