@@ -1,10 +1,36 @@
-.form {
+body.page-login {
+    margin: 8em auto;
     background: linear-gradient( rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7) ), url('/Pro_Gaming_Academy/images/register.jpg') no-repeat center center;
+    @include bp(480) {
+        margin: 3em auto;
+    }
+    @include bp(640) {
+        margin: 2em auto;        
+    }
+    @include bp(768) {
+        margin: 2em auto;        
+    }
+    @include bp(960) {
+        margin: 2em auto;        
+    }
+    @include bp(1024) {
+        margin: 2em auto;        
+    }
+    @include bp(1600) {
+        margin: 0em auto;        
+    }
+}
+.form {
+    // background: linear-gradient( rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7) ), url('../../images/register.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 2em;
+    @include bp(320) {
+        margin: 0 auto;
+        padding: 10em auto;
+    }
     @include bp(1024) {
         max-width: 1024px;
         margin: 0 auto;

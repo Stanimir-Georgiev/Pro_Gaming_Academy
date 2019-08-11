@@ -19,6 +19,9 @@ html {
 body, table, form, select, option, input, textarea {
   font: inherit; }
 
+body {
+  background: var(--main-background-color); }
+
 .site-title,
 h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
@@ -672,13 +675,38 @@ body.loaded .site-nav.location-header li {
   opacity: 1;
   transform: translateY(0); }
 
+body.page-login {
+  margin: 8em auto;
+  background: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7)), url("/Pro_Gaming_Academy/images/register.jpg") no-repeat center center; }
+  @media (min-width: 480px) and (max-width: 639px) {
+    body.page-login {
+      margin: 3em auto; } }
+  @media (min-width: 640px) and (max-width: 767px) {
+    body.page-login {
+      margin: 2em auto; } }
+  @media (min-width: 768px) and (max-width: 959px) {
+    body.page-login {
+      margin: 2em auto; } }
+  @media (min-width: 960px) and (max-width: 1023px) {
+    body.page-login {
+      margin: 2em auto; } }
+  @media (min-width: 1024px) and (max-width: 1599px) {
+    body.page-login {
+      margin: 2em auto; } }
+  @media (min-width: 1600px) and (max-width: 1920px) {
+    body.page-login {
+      margin: 0em auto; } }
+
 .form {
-  background: linear-gradient(rgba(7, 7, 7, 0.7), rgba(7, 7, 7, 0.7)), url("/Pro_Gaming_Academy/images/register.jpg") no-repeat center center;
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 2em; }
+  @media (min-width: 320px) and (max-width: 479px) {
+    .form {
+      margin: 0 auto;
+      padding: 10em auto; } }
   @media (min-width: 1024px) and (max-width: 1599px) {
     .form {
       max-width: 1024px;
